@@ -1,0 +1,7 @@
+name: Factions
+version: 0.0.1
+description: ##TODO##
+authors: [mezzodrinker, marlin]
+website: http://dev.bukkit.org/server-mods/Factions/
+main: ##TODO##
+softdepend: [Vault]
