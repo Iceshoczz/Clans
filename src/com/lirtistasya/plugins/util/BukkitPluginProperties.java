@@ -3,6 +3,10 @@ package com.lirtistasya.plugins.util;
 import org.bukkit.ChatColor;
 
 // TODO JavaDoc of BukkitPluginProperties
+/**
+ * 
+ * @author lirtistasya/mezzodrinker
+ */
 public abstract class BukkitPluginProperties {
 	/**
 	 * <code>public static final String COMMANDHELP_PLACEHOLDER_PARAM = "%p";</code>

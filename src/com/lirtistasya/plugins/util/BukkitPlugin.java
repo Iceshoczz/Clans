@@ -4,12 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 // TODO JavaDoc of BukkitPlugin
+/**
+ * 
+ * @author lirtistasya/mezzodrinker
+ */
 public abstract class BukkitPlugin extends JavaPlugin {
-	public static YamlConfiguration	config	= null;
+	protected BukkitCommandExecutor	commands	= null;
 
 	/**
 	 * Method that is called before the plugin gets enabled.
@@ -25,13 +28,16 @@ public abstract class BukkitPlugin extends JavaPlugin {
 
 	/**
 	 * Saves all files used by this plugin.
+	 * 
+	 * @throws IOException
+	 *             An IOException is thrown if an error occurs while saving the files used by this plugin.
 	 */
 	public abstract void save() throws IOException;
 
 	/**
-	 * Reloads all files used by this plugin.
+	 * (Re-)Loads all files used by this plugin.
 	 */
-	public abstract void reload() throws IOException;
+	public abstract void load();
 
 	/**
 	 * Logs an info message to the server's logger.
